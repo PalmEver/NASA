@@ -1,0 +1,128 @@
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Roboto&display=swap');
+/* === FONTS END === */
+
+/* CSS STARTS HERE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('space.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container {
+    margin: 30px auto;
+    width: 75%;
+}
+
+.container h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(219, 219, 219);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* border-bottom-right-radius: 15px; */
+}
+
+.container h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.setting-box {
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 140px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.setting-box input[type="date"] {
+    width: 220px;
+    height: 40px;
+}
+
+.setting-box button {
+    width: 15%;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(104, 189, 204);
+    font-family: 'Poppins', sans-serif;
+}
+
+.setting-box button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.container .img-slider {
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* border-bottom-right-radius: 15px; */
+    justify-content: center;
+}
+
+.container .img-slider .img-box {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 75%;
+}
+
+.container .img-slider .img-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Calendar Styling */
+::-webkit-datetime-edit { padding: 0.1em; }
+::-webkit-datetime-edit-text { color: black; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: rgb(21, 133, 161); }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: rgb(0, 55, 128); }
+
+@media screen and (max-width: 1000px) {
+
+    .setting-box {
+        flex-direction: column;
+        padding: 30px;
+        height: 500px;
+    }
+
+    .setting-box button {
+        width: 100%;
+        padding: 5px;
+        margin: 10px;
+        border: none;
+        background-color: rgb(104, 189, 204);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .setting-box button:hover {
+        cursor: pointer;
+        font-weight: bold;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- === HTML === -->
+    <main>
+        <div class="container">
+            <h1>Mars Rover Photos</h1>
+            <div class="setting-box">
+                <input type="date" name="kalender" id="kalender" min="2000-01-01" max=""></input>
+                <button onclick="Nasa()">Alla bilder</button>
+                <button onclick="Front_Hazard_Avoidance_Camera()">Bilder från Front Hazard Avoidance Camera</button>
+                <button onclick="Rear_Hazard_Avoidance_Camera()">Bilder från Rear Hazard Avoidance Camera</button>
+                <button onclick="Chemistry_and_Camera_Complex()">Bilder från Chemistry and Camera Complex</button>
+                <button onclick="Mars_Hand_Lens_Imager()">Bilder från Mars Hand Lens Imager</button>
+                <button onclick="Navigation_Camera()">Bilder från Navigation Camera</button>    
+            </div>
+
+            <div class="img-slider">
+                <div id="load" class="img-box">
+                    <p></p>
+                    <!-- LÄGG BILDKOD HÄR -->
+                    <!-- LÄGG BILDKOD HÄR -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- === HTML END === -->
+
+    <!-- === JAVASCRIPT === -->
+    <script src="assets/main.js"></script>
+    <!-- === JAVASCRIPT END === -->
+</body>
+</html>
